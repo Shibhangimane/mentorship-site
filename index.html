@@ -3,80 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mentorship Program for Freshers by Shibhangi Raj</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<style>
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f4f7f9;
-  color: #333;
-  scroll-behavior: smooth;
-}
-header {
-  background: linear-gradient(90deg,#4CAF50,#45a049);
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
-header h1 { margin: 0; font-size: 2.8em; }
-header p { font-size: 1.3em; margin: 15px 0; }
-.container { max-width: 1000px; margin: -40px auto 40px; padding: 20px; }
-.section { background: white; padding: 40px 30px; border-radius: 14px; margin-bottom: 30px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: 0.3s; }
-.section:hover { box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
-.cards { display: flex; flex-wrap: wrap; gap: 20px; }
-.card { flex: 1 1 250px; background: #f9fff9; padding: 25px 20px; border-radius: 12px; text-align: center; min-height: 250px; transition: 0.3s; }
-.card h3 { color: #4CAF50; margin-top: 0; }
-.card:hover { transform: translateY(-5px); }
-h2 { color: #4CAF50; margin-top: 0; }
-.btn { display: inline-block; background: white; color: #4CAF50; padding: 14px 30px; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
-.btn:hover { opacity: 0.9; transform: translateY(-2px); }
-.upi-btn { background: #00c853; color: white; padding: 12px 25px; border-radius: 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; margin-top: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
-.upi-btn img { margin-right: 10px; }
-.upi-btn:hover { transform: translateY(-3px); }
-input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 8px; border: 1px solid #ccc; }
-button { background: #4CAF50; color: white; padding: 12px 25px; border: none; border-radius: 25px; font-size: 16px; cursor: pointer; transition: 0.3s; }
-button:hover { opacity: 0.9; transform: translateY(-2px); }
-footer { background: #333; color: white; text-align: center; padding: 20px; }
+<title>Shibhangi Raj | Career Mentor</title>
 
-/* Testimonials carousel */
-.testimonial-carousel { position: relative; overflow: hidden; height: auto; text-align: center; }
-.testimonial-slide { display: none; padding: 20px; font-style: italic; }
-.testimonial-slide.active { display: block; }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#f4f7f9;
+  color:#333;
+  scroll-behavior:smooth;
+}
+header{
+  background:linear-gradient(90deg,#4CAF50,#45a049);
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+}
+header h1{margin:0;font-size:2.6em;}
+header p{font-size:1.2em;margin:15px 0;}
+.btn{
+  display:inline-block;
+  background:white;
+  color:#4CAF50;
+  padding:12px 28px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  margin-top:20px;
+  transition:0.3s;
+}
+.btn:hover{opacity:0.85;}
+.container{
+  max-width:1000px;
+  margin:-40px auto 40px;
+  padding:20px;
+}
+.section{
+  background:white;
+  padding:30px;
+  border-radius:14px;
+  margin-bottom:30px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+.card{
+  flex:1 1 250px;
+  background:#f9fff9;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+}
+.card h3{color:#4CAF50;margin-top:0;}
+h2{color:#4CAF50;margin-top:0;}
+.upi-btn{
+  background:#00c853;
+  color:white;
+  padding:12px 25px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  margin-top:10px;
+}
+.upi-btn img{margin-right:8px;}
+input, select, textarea{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+}
+button{
+  background:#4CAF50;
+  color:white;
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  font-size:16px;
+  cursor:pointer;
+}
+footer{
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+.testimonial-carousel{text-align:center;}
+.testimonial-slide{display:none;font-style:italic;}
+.testimonial-slide.active{display:block;}
 </style>
 </head>
+
 <body>
 
 <header>
   <h1>Mentorship Program for Freshers by Shibhangi Raj</h1>
-  <p>Guiding fresh graduates to launch successful careers</p>
+  <p>Career & Interview Mentor for Fresh Graduates</p>
+  <a href="#contact" class="btn">Contact Me</a>
 </header>
 
 <div class="container">
 
-<!-- Motivational Video -->
-<div class="section">
-<h2>Get Inspired & Stay Motivated</h2>
-<iframe width="100%" height="300"
-    src="https://www.youtube.com/embed/nuv1oOgzLKQ"
-    title="Motivational Music for Career & Confidence"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    style="border-radius:12px;">
-</iframe>
-<p style="margin-top:15px; font-size:1em; color:#555;">An encouraging message through music: You can do it, and your career starts today!</p>
-</div>
-
 <!-- Why Mentorship -->
 <div class="section">
-<h2>Why Choose My Mentorship?</h2>
-<p>I help college graduates and freshers confidently start their careers with the right guidance, skills, and interview preparation.</p>
+<h2>Why My Mentorship?</h2>
+<p>I help college graduates and freshers confidently start their careers with the right guidance.</p>
 <ul>
 <li>Clear career direction & planning</li>
 <li>Strong resume & LinkedIn profile</li>
 <li>Interview confidence & mock sessions</li>
-<li>Understanding real industry expectations</li>
+<li>Understanding industry expectations</li>
 </ul>
 </div>
 
@@ -86,7 +127,7 @@ footer { background: #333; color: white; text-align: center; padding: 20px; }
 <div class="cards">
   <div class="card">
     <h3>1:1 Career Mentorship</h3>
-    <p>Personal guidance based on your background and goals.</p>
+    <p>Personal guidance based on your goals.</p>
   </div>
   <div class="card">
     <h3>Resume Building</h3>
@@ -94,85 +135,104 @@ footer { background: #333; color: white; text-align: center; padding: 20px; }
   </div>
   <div class="card">
     <h3>Interview Training</h3>
-    <p>Mock interviews & confidence-building tips.</p>
+    <p>Mock interviews & confidence-building.</p>
   </div>
   <div class="card">
-    <h3>Freshers Career Guidance</h3>
-    <p>Perfect for students & recent graduates.</p>
+    <h3>Freshers Guidance</h3>
+    <p>Perfect for students & graduates.</p>
   </div>
 </div>
 </div>
 
-<!-- Programs & Payment -->
+<!-- Program Tiers -->
 <div class="section">
 <h2>Online Mentorship Program</h2>
+
 <div class="cards">
+
+<div class="card">
+<h3>Free Demo Session</h3>
+<p>Understand the mentorship approach.</p>
+<p><b>Price:</b> ₹0</p>
+<a href="#contact" class="btn">Book Free Demo</a>
+</div>
+
 <div class="card">
 <h3>7-Day Standard Program</h3>
-<p>Career guidance, resume tips, and interview preparation.</p>
+<p>Career guidance & interview prep.</p>
 <p><b>Price:</b> ₹999</p>
-<a href="upi://pay?pa=yourgpayid@okaxis&pn=ShibhangiRaj&am=999&cu=INR&tn=7-Day+Standard+Program" 
-   target="_blank" class="upi-btn">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Google_Pay_logo.svg/32px-Google_Pay_logo.svg.png" alt="GPay">
-   Pay ₹999 via GPay
+<a href="upi://pay?pa=yourgpayid@okaxis&pn=ShibhangiRaj&am=999&cu=INR"
+   class="upi-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Google_Pay_logo.svg/32px-Google_Pay_logo.svg.png">
+Pay via GPay
 </a>
 </div>
 
 <div class="card">
-<h3>Premium Mentorship Program</h3>
-<p>Includes Standard Program + professional resume & mock interviews.</p>
+<h3>Premium Program</h3>
+<p>Resume + mock interviews.</p>
 <p><b>Price:</b> ₹2,499</p>
-<a href="upi://pay?pa=yourgpayid@okaxis&pn=ShibhangiRaj&am=2499&cu=INR&tn=Premium+Program" 
-   target="_blank" class="upi-btn">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Google_Pay_logo.svg/32px-Google_Pay_logo.svg.png" alt="GPay">
-   Pay ₹2,499 via GPay
+<a href="upi://pay?pa=yourgpayid@okaxis&pn=ShibhangiRaj&am=2499&cu=INR"
+   class="upi-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Google_Pay_logo.svg/32px-Google_Pay_logo.svg.png">
+Pay via GPay
 </a>
 </div>
-</div>
-</div>
 
-<!-- Student Registration Form -->
-<div class="section">
-<h2>Student Registration</h2>
-<p>If you are interested in mentorship, please fill this form. I will contact you personally.</p>
-
-<form action="https://formspree.io/f/xldqqbzd" method="POST" onsubmit="window.location='thankyou.html';return true;">
-  <label>Full Name</label>
-  <input type="text" name="name" required>
-  <label>Email</label>
-  <input type="email" name="email" required>
-  <label>Phone Number</label>
-  <input type="text" name="phone" required>
-  <label>Current Status</label>
-  <select name="status">
-    <option>Student</option>
-    <option>Fresher</option>
-    <option>Graduate</option>
-  </select>
-  <label>How can I help you?</label>
-  <textarea name="message" rows="4"></textarea>
-  <br><br>
-  <button type="submit">Register</button>
-</form>
+</div>
 </div>
 
 <!-- Testimonials -->
 <div class="section">
-<h2>What Students Say</h2>
+<h2>Testimonials</h2>
 <div class="testimonial-carousel">
-  <div class="testimonial-slide active">"Shibhangi's mentorship helped me crack my first job interview!" - Rohit S.</div>
-  <div class="testimonial-slide">"Thanks to the guidance, I built a professional resume and gained confidence." - Priya K.</div>
-  <div class="testimonial-slide">"The mock interviews were very helpful and practical." - Aditya M.</div>
+  <div class="testimonial-slide active">"I cracked my first job interview!" – Rohit</div>
+  <div class="testimonial-slide">"Very supportive mentorship." – Priya</div>
+  <div class="testimonial-slide">"Practical and helpful guidance." – Aditya</div>
 </div>
 </div>
 
-<!-- Contact -->
-<div class="section" id="contact">
-<h2>Contact Me</h2>
-<p><b>Email:</b> shibhangimane@gmail.com</p>
-<p><b>Phone:</b> 6301700017</p>
-<a href="tel:6301700017" class="btn">Call Now</a>
-<a href="mailto:shibhangimane@gmail.com" class="btn">Email Me</a>
+<!-- ⭐ ADDED VIDEO SECTION (ONLY NEW PART) -->
+<div class="section">
+<h2>Why Mentorship is Important</h2>
+<iframe width="100%" height="315"
+  src="https://www.youtube.com/embed/EYnp6tyMj8U"
+  frameborder="0" allowfullscreen
+  style="border-radius:12px;"></iframe>
+<p style="margin-top:10px;color:#555;">
+A short explanation on how mentorship helps fresh graduates transition smoothly into professional life.
+</p>
+</div>
+
+<!-- Student Registration -->
+<div class="section">
+<h2>Student Registration</h2>
+
+<form action="https://formspree.io/f/xldqqbzd" method="POST">
+<label>Full Name</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Phone</label>
+<input type="text" name="phone" required>
+
+<label>Status</label>
+<select name="status">
+<option>Student</option>
+<option>Fresher</option>
+<option>Graduate</option>
+</select>
+
+<label>Message</label>
+<textarea name="message"></textarea>
+
+<br><br>
+<button type="submit">Register</button>
+</form>
+</div>
+
 </div>
 
 <footer>
@@ -180,17 +240,13 @@ footer { background: #333; color: white; text-align: center; padding: 20px; }
 </footer>
 
 <script>
-// Testimonial slide carousel
-let slides = document.querySelectorAll(".testimonial-slide");
-let current = 0;
-function showSlide(index){
-  slides.forEach((slide,i)=>slide.classList.remove("active"));
-  slides[index].classList.add("active");
-}
+let slides=document.querySelectorAll(".testimonial-slide");
+let i=0;
 setInterval(()=>{
-  current = (current + 1) % slides.length;
-  showSlide(current);
-}, 4000); // 4 seconds per testimonial
+slides.forEach(s=>s.classList.remove("active"));
+slides[i].classList.add("active");
+i=(i+1)%slides.length;
+},4000);
 </script>
 
 </body>

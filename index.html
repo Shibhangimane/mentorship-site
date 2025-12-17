@@ -32,7 +32,9 @@ header p{font-size:1.3em;margin:15px 0;}
   font-weight:600;
   text-decoration:none;
   margin-top:20px;
+  transition:0.3s;
 }
+.btn:hover{opacity:0.85;}
 .container{
   max-width:1000px;
   margin:-40px auto 40px;
@@ -57,6 +59,7 @@ header p{font-size:1.3em;margin:15px 0;}
   background:#f9fff9;
   padding:20px;
   border-radius:12px;
+  text-align:center;
 }
 .card h3{color:#4CAF50;margin-top:0;}
 .cards .card:hover{
@@ -76,6 +79,21 @@ h2{color:#4CAF50;margin-top:0;}
 .call{background:#4CAF50;}
 .email{background:#2196F3;}
 .whatsapp{background:#25D366;}
+.upi-btn{
+  background:#ff5722;
+  color:white;
+  padding:12px 25px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:10px;
+  transition:0.3s;
+}
+.upi-btn:hover{
+  background:#e64a19;
+  transform: translateY(-2px);
+}
 input, select, textarea{
   width:100%;
   padding:10px;
@@ -97,12 +115,11 @@ footer{
   text-align:center;
   padding:20px;
 }
-
-/* Carousel styles */
+/* Video testimonial carousel */
 .testimonial-carousel{
   position: relative;
   overflow: hidden;
-  height: auto;
+  height:auto;
 }
 .testimonial-slide{
   display: none;
@@ -111,6 +128,9 @@ footer{
 }
 .testimonial-slide.active{
   display: block;
+}
+iframe{
+  border-radius:12px;
 }
 </style>
 </head>
@@ -179,8 +199,11 @@ footer{
     <h3>7-Day Standard Program</h3>
     <p>Career guidance, resume tips, and interview preparation.</p>
     <p><b>Price:</b> ₹999</p>
-    <a href="upi://pay?pa=yourupiid@bank&pn=ShibhangiRaj&am=999&cu=INR&tn=7-Day+Standard+Program" target="_blank" class="btn">
-      Pay ₹999 via UPI
+    <a href="upi://pay?pa=yourupiid@bank&pn=ShibhangiRaj&am=999&cu=INR&tn=7-Day+Standard+Program" 
+       target="_blank" class="upi-btn">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/UPI_Logo.svg/32px-UPI_Logo.svg.png" 
+            alt="UPI" style="vertical-align:middle;margin-right:8px;">
+       Pay ₹999 via UPI
     </a>
   </div>
 
@@ -189,26 +212,32 @@ footer{
     <h3>Premium Mentorship Program</h3>
     <p>Includes Standard Program + professional resume & mock interviews.</p>
     <p><b>Price:</b> ₹2,499</p>
-    <a href="upi://pay?pa=yourupiid@bank&pn=ShibhangiRaj&am=2499&cu=INR&tn=Premium+Program" target="_blank" class="btn">
-      Pay ₹2,499 via UPI
+    <a href="upi://pay?pa=yourupiid@bank&pn=ShibhangiRaj&am=2499&cu=INR&tn=Premium+Program" 
+       target="_blank" class="upi-btn">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/UPI_Logo.svg/32px-UPI_Logo.svg.png" 
+            alt="UPI" style="vertical-align:middle;margin-right:8px;">
+       Pay ₹2,499 via UPI
     </a>
     <p style="margin-top:10px;font-size:0.9em;color:#555;">Payment is 100% secure via UPI. After payment, send a screenshot via email or WhatsApp to confirm.</p>
   </div>
 </div>
 </div>
 
-<!-- Testimonials Carousel -->
+<!-- Video Testimonials -->
 <div class="section">
 <h2>Testimonials</h2>
 <div class="testimonial-carousel">
   <div class="testimonial-slide active">
-    <p><strong>Rohit S.</strong><br>"Shibhangi’s mentorship helped me land my first job. Her guidance is practical and inspiring!"</p>
+    <iframe width="100%" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+    <p><strong>Rohit S.</strong></p>
   </div>
   <div class="testimonial-slide">
-    <p><strong>Priya K.</strong><br>"I gained confidence in interviews and improved my resume dramatically. Highly recommended."</p>
+    <iframe width="100%" height="250" src="https://www.youtube.com/embed/ysz5S6PUM-U" allowfullscreen></iframe>
+    <p><strong>Priya K.</strong></p>
   </div>
   <div class="testimonial-slide">
-    <p><strong>Aditya M.</strong><br>"Clear, actionable advice and amazing support for fresh graduates. Thank you!"</p>
+    <iframe width="100%" height="250" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
+    <p><strong>Aditya M.</strong></p>
   </div>
 </div>
 </div>
@@ -225,9 +254,7 @@ footer{
   <a href="https://wa.me/916301700017" target="_blank" class="whatsapp">Chat on WhatsApp</a>
 </div>
 
-<p style="margin-top:15px;">
-Reach out today and take the first step toward a successful career.
-</p>
+<p style="margin-top:15px;">Reach out today and take the first step toward a successful career.</p>
 </div>
 
 <!-- Student Registration Form -->
@@ -267,7 +294,7 @@ Reach out today and take the first step toward a successful career.
 </footer>
 
 <script>
-// Simple testimonial carousel
+// Testimonial carousel
 let slides = document.querySelectorAll(".testimonial-slide");
 let current = 0;
 function showSlide(index){
@@ -277,7 +304,7 @@ function showSlide(index){
 setInterval(()=>{
   current = (current + 1) % slides.length;
   showSlide(current);
-},4000); // change every 4 seconds
+},5000); // 5 sec per video
 </script>
 
 </body>

@@ -3,151 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shibhangi Raj | Career Mentor</title>
-
+<title>Mentorship Program for Freshers by Shibhangi Raj</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
 <style>
-body{
-  margin:0;
-  font-family:'Poppins',sans-serif;
-  background:#f4f7f9;
-  color:#333;
-  scroll-behavior:smooth;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7f9;
+  color: #333;
+  scroll-behavior: smooth;
 }
-header{
-  background:linear-gradient(90deg,#4CAF50,#45a049);
-  color:white;
-  padding:80px 20px;
-  text-align:center;
-}
-header h1{margin:0;font-size:2.8em;}
-header p{font-size:1.3em;margin:15px 0;}
-.btn{
-  display:inline-block;
-  background:white;
-  color:#4CAF50;
-  padding:12px 28px;
-  border-radius:30px;
-  font-weight:600;
-  text-decoration:none;
-  margin-top:20px;
-  transition:0.3s;
-}
-.btn:hover{opacity:0.85;}
-.container{
-  max-width:1000px;
-  margin:-40px auto 40px;
-  padding:20px;
-}
-.section{
-  background:white;
-  padding:30px;
-  border-radius:14px;
-  margin-bottom:30px;
-  box-shadow:0 6px 15px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
-.section:hover{box-shadow:0 10px 20px rgba(0,0,0,0.15);}
-.cards{
-  display:flex;
-  flex-wrap:wrap;
-  gap:20px;
-}
-.card{
-  flex:1 1 250px;
-  background:#f9fff9;
-  padding:20px;
-  border-radius:12px;
-  text-align:center;
-}
-.card h3{color:#4CAF50;margin-top:0;}
-.cards .card:hover{
-  transform: translateY(-5px);
-  transition:0.3s;
-}
-h2{color:#4CAF50;margin-top:0;}
-.contact-buttons a{
-  display:inline-block;
-  margin:10px 10px 0 0;
-  padding:12px 20px;
-  border-radius:25px;
-  text-decoration:none;
-  color:white;
-  font-weight:600;
-}
-.call{background:#4CAF50;}
-.email{background:#2196F3;}
-.whatsapp{background:#25D366;}
-.upi-btn{
-  background:#ff5722;
-  color:white;
-  padding:12px 25px;
-  border-radius:30px;
-  font-weight:600;
-  text-decoration:none;
-  display:inline-block;
-  margin-top:10px;
-  transition:0.3s;
-}
-.upi-btn:hover{
-  background:#e64a19;
-  transform: translateY(-2px);
-}
-input, select, textarea{
-  width:100%;
-  padding:10px;
-  margin-top:5px;
-}
-button{
-  background:#4CAF50;
-  color:white;
-  padding:12px 25px;
-  border:none;
-  border-radius:25px;
-  font-size:16px;
-  cursor:pointer;
-}
-button:hover{opacity:0.85;}
-footer{
-  background:#333;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
-/* Video testimonial carousel */
-.testimonial-carousel{
-  position: relative;
-  overflow: hidden;
-  height:auto;
-}
-.testimonial-slide{
-  display: none;
-  padding: 20px;
+header {
+  background: linear-gradient(90deg,#4CAF50,#45a049);
+  color: white;
+  padding: 60px 20px;
   text-align: center;
 }
-.testimonial-slide.active{
-  display: block;
+header h1 { margin: 0; font-size: 2.8em; }
+header p { font-size: 1.3em; margin: 15px 0; }
+.container {
+  max-width: 1000px;
+  margin: -40px auto 40px;
+  padding: 20px;
 }
-iframe{
-  border-radius:12px;
+.section {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.section:hover { box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  flex: 1 1 250px;
+  background: #f9fff9;
+  padding: 25px 20px;
+  border-radius: 12px;
+  text-align: center;
+  min-height: 250px;
+  transition: 0.3s;
+}
+.card h3 { color: #4CAF50; margin-top: 0; }
+.card:hover { transform: translateY(-5px); }
+h2 { color: #4CAF50; margin-top: 0; }
+.btn {
+  display: inline-block;
+  background: white;
+  color: #4CAF50;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.btn:hover { opacity: 0.9; transform: translateY(-2px); }
+.upi-btn {
+  background: #00c853; /* Google Pay green */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.upi-btn img {
+  margin-right: 10px;
+}
+.upi-btn:hover { transform: translateY(-3px); }
+footer { background: #333; color: white; text-align: center; padding: 20px; }
+
+/* Testimonials carousel */
+.testimonial-carousel {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  text-align: center;
+}
+.testimonial-slide {
+  display: none;
+  padding: 20px;
+  font-style: italic;
+}
+.testimonial-slide.active {
+  display: block;
 }
 </style>
 </head>
-
 <body>
 
 <header>
-  <h1>Shibhangi Raj</h1>
-  <p>Career & Interview Mentor for Fresh Graduates</p>
-  <a href="#contact" class="btn">Contact Me</a>
+  <h1>Mentorship Program for Freshers by Shibhangi Raj</h1>
+  <p>Guiding fresh graduates to launch successful careers</p>
 </header>
 
 <div class="container">
 
+<!-- Intro Video -->
+<div class="section">
+<h2>Why Freshers Need Mentorship</h2>
+<iframe width="100%" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Why Freshers Need Mentorship" frameborder="0" allowfullscreen style="border-radius:12px;"></iframe>
+</div>
+
 <!-- Why Mentorship -->
 <div class="section">
-<h2>Why My Mentorship?</h2>
+<h2>Why Choose My Mentorship?</h2>
 <p>I help college graduates and freshers confidently start their careers with the right guidance, skills, and interview preparation.</p>
 <ul>
 <li>Clear career direction & planning</li>
@@ -180,111 +152,53 @@ iframe{
 </div>
 </div>
 
-<!-- Program Tiers -->
-<div class="section" id="program">
-<h2>Online Mentorship Program</h2>
-<p>Join my online mentorship program specially designed for fresh graduates. Start with a free demo session. If you like it, enroll in a paid program.</p>
-
-<div class="cards">
-  <!-- Free Demo -->
-  <div class="card">
-    <h3>Free Demo Session</h3>
-    <p>Experience a trial session to understand the program. Absolutely free!</p>
-    <p><b>Price:</b> ₹0</p>
-    <a href="#contact" class="btn">Book Free Demo</a>
-  </div>
-
-  <!-- Standard Program -->
-  <div class="card">
-    <h3>7-Day Standard Program</h3>
-    <p>Career guidance, resume tips, and interview preparation.</p>
-    <p><b>Price:</b> ₹999</p>
-    <a href="upi://pay?pa=yourupiid@bank&pn=ShibhangiRaj&am=999&cu=INR&tn=7-Day+Standard+Program" 
-       target="_blank" class="upi-btn">
-       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/UPI_Logo.svg/32px-UPI_Logo.svg.png" 
-            alt="UPI" style="vertical-align:middle;margin-right:8px;">
-       Pay ₹999 via UPI
-    </a>
-  </div>
-
-  <!-- Premium Program -->
-  <div class="card">
-    <h3>Premium Mentorship Program</h3>
-    <p>Includes Standard Program + professional resume & mock interviews.</p>
-    <p><b>Price:</b> ₹2,499</p>
-    <a href="upi://pay?pa=yourupiid@bank&pn=ShibhangiRaj&am=2499&cu=INR&tn=Premium+Program" 
-       target="_blank" class="upi-btn">
-       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/UPI_Logo.svg/32px-UPI_Logo.svg.png" 
-            alt="UPI" style="vertical-align:middle;margin-right:8px;">
-       Pay ₹2,499 via UPI
-    </a>
-    <p style="margin-top:10px;font-size:0.9em;color:#555;">Payment is 100% secure via UPI. After payment, send a screenshot via email or WhatsApp to confirm.</p>
-  </div>
-</div>
-</div>
-
-<!-- Video Testimonials -->
+<!-- Programs & Payment -->
 <div class="section">
-<h2>Testimonials</h2>
-<div class="testimonial-carousel">
-  <div class="testimonial-slide active">
-    <iframe width="100%" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
-    <p><strong>Rohit S.</strong></p>
-  </div>
-  <div class="testimonial-slide">
-    <iframe width="100%" height="250" src="https://www.youtube.com/embed/ysz5S6PUM-U" allowfullscreen></iframe>
-    <p><strong>Priya K.</strong></p>
-  </div>
-  <div class="testimonial-slide">
-    <iframe width="100%" height="250" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
-    <p><strong>Aditya M.</strong></p>
-  </div>
+<h2>Online Mentorship Program</h2>
+<div class="cards">
+
+<div class="card">
+<h3>7-Day Standard Program</h3>
+<p>Career guidance, resume tips, and interview preparation.</p>
+<p><b>Price:</b> ₹999</p>
+<a href="upi://pay?pa=yourgpayid@okaxis&pn=ShibhangiRaj&am=999&cu=INR&tn=7-Day+Standard+Program" 
+   target="_blank" class="upi-btn">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Google_Pay_logo.svg/32px-Google_Pay_logo.svg.png" alt="GPay">
+   Pay ₹999 via GPay
+</a>
+</div>
+
+<div class="card">
+<h3>Premium Mentorship Program</h3>
+<p>Includes Standard Program + professional resume & mock interviews.</p>
+<p><b>Price:</b> ₹2,499</p>
+<a href="upi://pay?pa=yourgpayid@okaxis&pn=ShibhangiRaj&am=2499&cu=INR&tn=Premium+Program" 
+   target="_blank" class="upi-btn">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Google_Pay_logo.svg/32px-Google_Pay_logo.svg.png" alt="GPay">
+   Pay ₹2,499 via GPay
+</a>
+</div>
+
 </div>
 </div>
 
-<!-- Contact Section -->
+<!-- Testimonials -->
+<div class="section">
+<h2>What Students Say</h2>
+<div class="testimonial-carousel">
+  <div class="testimonial-slide active">"Shibhangi's mentorship helped me crack my first job interview!" - Rohit S.</div>
+  <div class="testimonial-slide">"Thanks to the guidance, I built a professional resume and gained confidence." - Priya K.</div>
+  <div class="testimonial-slide">"The mock interviews were very helpful and practical." - Aditya M.</div>
+</div>
+</div>
+
+<!-- Contact -->
 <div class="section" id="contact">
 <h2>Contact Me</h2>
 <p><b>Email:</b> shibhangimane@gmail.com</p>
 <p><b>Phone:</b> 6301700017</p>
-
-<div class="contact-buttons">
-  <a href="tel:6301700017" class="call">Call Now</a>
-  <a href="mailto:shibhangimane@gmail.com" class="email">Email Me</a>
-  <a href="https://wa.me/916301700017" target="_blank" class="whatsapp">Chat on WhatsApp</a>
-</div>
-
-<p style="margin-top:15px;">Reach out today and take the first step toward a successful career.</p>
-</div>
-
-<!-- Student Registration Form -->
-<div class="section">
-<h2>Student Registration</h2>
-<p>If you are interested in mentorship, please fill this form. I will contact you personally.</p>
-
-<form action="https://formspree.io/f/xldqqbzd" method="POST" onsubmit="window.location='thankyou.html';return true;">
-  <label>Full Name</label>
-  <input type="text" name="name" required>
-
-  <label>Email</label>
-  <input type="email" name="email" required>
-
-  <label>Phone Number</label>
-  <input type="text" name="phone" required>
-
-  <label>Current Status</label>
-  <select name="status">
-    <option>Student</option>
-    <option>Fresher</option>
-    <option>Graduate</option>
-  </select>
-
-  <label>How can I help you?</label>
-  <textarea name="message" rows="4"></textarea>
-
-  <br><br>
-  <button type="submit">Register</button>
-</form>
+<a href="tel:6301700017" class="btn">Call Now</a>
+<a href="mailto:shibhangimane@gmail.com" class="btn">Email Me</a>
 </div>
 
 </div>
@@ -294,7 +208,7 @@ iframe{
 </footer>
 
 <script>
-// Testimonial carousel
+// Testimonial slide carousel
 let slides = document.querySelectorAll(".testimonial-slide");
 let current = 0;
 function showSlide(index){
@@ -304,7 +218,7 @@ function showSlide(index){
 setInterval(()=>{
   current = (current + 1) % slides.length;
   showSlide(current);
-},5000); // 5 sec per video
+}, 4000); // 4 seconds per testimonial
 </script>
 
 </body>

@@ -44,7 +44,9 @@ header p{font-size:1.3em;margin:15px 0;}
   border-radius:14px;
   margin-bottom:30px;
   box-shadow:0 6px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
 }
+.section:hover{box-shadow:0 10px 20px rgba(0,0,0,0.15);}
 .cards{
   display:flex;
   flex-wrap:wrap;
@@ -57,6 +59,10 @@ header p{font-size:1.3em;margin:15px 0;}
   border-radius:12px;
 }
 .card h3{color:#4CAF50;margin-top:0;}
+.cards .card:hover{
+  transform: translateY(-5px);
+  transition:0.3s;
+}
 h2{color:#4CAF50;margin-top:0;}
 .contact-buttons a{
   display:inline-block;
@@ -69,6 +75,7 @@ h2{color:#4CAF50;margin-top:0;}
 }
 .call{background:#4CAF50;}
 .email{background:#2196F3;}
+.whatsapp{background:#25D366;}
 input, select, textarea{
   width:100%;
   padding:10px;
@@ -83,6 +90,7 @@ button{
   font-size:16px;
   cursor:pointer;
 }
+button:hover{opacity:0.85;}
 footer{
   background:#333;
   color:white;
@@ -102,6 +110,7 @@ footer{
 
 <div class="container">
 
+<!-- Why Mentorship -->
 <div class="section">
 <h2>Why My Mentorship?</h2>
 <p>I help college graduates and freshers confidently start their careers with the right guidance, skills, and interview preparation.</p>
@@ -113,6 +122,7 @@ footer{
 </ul>
 </div>
 
+<!-- Services -->
 <div class="section">
 <h2>My Services</h2>
 <div class="cards">
@@ -135,16 +145,35 @@ footer{
 </div>
 </div>
 
+<!-- Testimonials -->
+<div class="section">
+<h2>Testimonials</h2>
+<div class="cards">
+  <div class="card">
+    <h3>Rohit S.</h3>
+    <p>"Shibhangi’s mentorship helped me land my first job. Her guidance is practical and inspiring!"</p>
+  </div>
+  <div class="card">
+    <h3>Priya K.</h3>
+    <p>"I gained confidence in interviews and improved my resume dramatically. Highly recommended."</p>
+  </div>
+  <div class="card">
+    <h3>Aditya M.</h3>
+    <p>"Clear, actionable advice and amazing support for fresh graduates. Thank you!"</p>
+  </div>
+</div>
+</div>
+
 <!-- Contact Section -->
 <div class="section" id="contact">
 <h2>Contact Me</h2>
-
 <p><b>Email:</b> shibhangimane@gmail.com</p>
 <p><b>Phone:</b> 6301700017</p>
 
 <div class="contact-buttons">
   <a href="tel:6301700017" class="call">Call Now</a>
   <a href="mailto:shibhangimane@gmail.com" class="email">Email Me</a>
+  <a href="https://wa.me/916301700017" target="_blank" class="whatsapp">Chat on WhatsApp</a>
 </div>
 
 <p style="margin-top:15px;">
@@ -152,12 +181,12 @@ Reach out today and take the first step toward a successful career.
 </p>
 </div>
 
-<!-- Student Registration Form Section -->
+<!-- Student Registration Form -->
 <div class="section">
 <h2>Student Registration</h2>
 <p>If you are interested in mentorship, please fill this form. I will contact you personally.</p>
 
-<form action="https://formspree.io/f/xldqqbzd" method="POST">
+<form action="https://formspree.io/f/xldqqbzd" method="POST" onsubmit="window.location='thankyou.html';return true;">
   <label>Full Name</label>
   <input type="text" name="name" required>
 

@@ -4,71 +4,138 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shibhangi Raj | Career Mentor</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
-body{margin:0;font-family:'Poppins',sans-serif;background:#f4f7f9;color:#333;}
-header{background:linear-gradient(90deg,#4CAF50,#45a049);color:white;padding:70px 20px;text-align:center;}
+body{margin:0;font-family:'Poppins',sans-serif;background:#f4f7f9;color:#333;scroll-behavior:smooth;}
+header{
+  background:linear-gradient(90deg,#4CAF50,#45a049);
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+}
 header h1{margin:0;font-size:2.8em;}
-header p{font-size:1.3em;margin-top:10px;}
-.container{max-width:1000px;margin:-40px auto 40px;padding:20px;}
-.section{background:white;padding:30px;border-radius:14px;margin-bottom:30px;box-shadow:0 6px 15px rgba(0,0,0,0.1);}
-.cards{display:flex;flex-wrap:wrap;gap:20px;}
-.card{flex:1 1 250px;background:#f9fff9;padding:20px;border-radius:12px;transition:transform 0.3s;cursor:pointer;}
-.card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+header p{font-size:1.3em;margin:15px 0;}
+
+.btn{
+  display:inline-block;
+  background:white;
+  color:#4CAF50;
+  padding:12px 28px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  margin-top:20px;
+}
+
+.container{
+  max-width:1000px;
+  margin:-40px auto 40px;
+  padding:20px;
+}
+
+.section{
+  background:white;
+  padding:30px;
+  border-radius:14px;
+  margin-bottom:30px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.card{
+  flex:1 1 250px;
+  background:#f9fff9;
+  padding:20px;
+  border-radius:12px;
+}
 .card h3{color:#4CAF50;margin-top:0;}
+
 h2{color:#4CAF50;margin-top:0;}
-footer{background:#333;color:white;text-align:center;padding:20px;}
-.contact p{margin:5px 0;font-size:1.1em;}
+
+.contact-buttons a{
+  display:inline-block;
+  margin:10px 10px 0 0;
+  padding:12px 20px;
+  border-radius:25px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+}
+.call{background:#4CAF50;}
+.email{background:#2196F3;}
+
+footer{
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>Shibhangi Raj</h1>
-<p>Career & Interview Mentor for Fresh Graduates</p>
+  <h1>Shibhangi Raj</h1>
+  <p>Career & Interview Mentor for Fresh Graduates</p>
+  <a href="#contact" class="btn">Contact Me</a>
 </header>
 
 <div class="container">
 
 <div class="section">
-<h2>Why Choose My Mentorship?</h2>
-<p>As a mentor, I guide fresh graduates in building the skills, confidence, and strategy needed to land their first career opportunities. My program is designed to help you:</p>
+<h2>Why My Mentorship?</h2>
+<p>I help college graduates and freshers confidently start their careers with the right guidance, skills, and interview preparation.</p>
 <ul>
-<li>Understand industry expectations and hiring trends</li>
-<li>Build a professional resume that stands out</li>
-<li>Prepare and practice for interviews</li>
-<li>Gain career clarity and goal-setting strategies</li>
-<li>Develop soft skills essential for workplace success</li>
+<li>Clear career direction & planning</li>
+<li>Strong resume & LinkedIn profile</li>
+<li>Interview confidence & mock sessions</li>
+<li>Understanding real industry expectations</li>
 </ul>
 </div>
 
 <div class="section">
 <h2>My Services</h2>
 <div class="cards">
-<div class="card">
-<h3>Personalized Mentorship</h3>
-<p>One-on-one guidance tailored to your career goals and industry of interest.</p>
-</div>
-<div class="card">
-<h3>Resume & LinkedIn Optimization</h3>
-<p>Create professional resumes and LinkedIn profiles that attract recruiters.</p>
-</div>
-<div class="card">
-<h3>Interview Training</h3>
-<p>Mock interviews and tips to boost your confidence and performance.</p>
-</div>
-<div class="card">
-<h3>Career Strategy</h3>
-<p>Plan your career path, understand opportunities, and get actionable guidance.</p>
-</div>
+  <div class="card">
+    <h3>1:1 Career Mentorship</h3>
+    <p>Personal guidance based on your background and goals.</p>
+  </div>
+  <div class="card">
+    <h3>Resume Building</h3>
+    <p>Professional resumes that attract recruiters.</p>
+  </div>
+  <div class="card">
+    <h3>Interview Training</h3>
+    <p>Mock interviews & confidence-building tips.</p>
+  </div>
+  <div class="card">
+    <h3>Freshers Career Guidance</h3>
+    <p>Perfect for students & recent graduates.</p>
+  </div>
 </div>
 </div>
 
-<div class="section contact">
+<div class="section" id="contact">
 <h2>Contact Me</h2>
 <p><b>Email:</b> shibhangimane@gmail.com</p>
 <p><b>Phone:</b> 6301700017</p>
-<p>Reach out today to start your mentorship journey and kickstart your career!</p>
+
+<div class="contact-buttons">
+  <a href="tel:6301700017" class="call">Call Now</a>
+  <a href="mailto:shibhangimane@gmail.com" class="email">Email Me</a>
+</div>
+
+<p style="margin-top:15px;">
+Reach out today and take the first step toward a successful career.
+</p>
 </div>
 
 </div>

@@ -8,7 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:'Poppins',sans-serif;background:#f4f7f9;color:#333;scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#f4f7f9;
+  color:#333;
+  scroll-behavior:smooth;
+}
 header{
   background:linear-gradient(90deg,#4CAF50,#45a049);
   color:white;
@@ -71,6 +77,22 @@ h2{color:#4CAF50;margin-top:0;}
 .call{background:#4CAF50;}
 .email{background:#2196F3;}
 
+input, select, textarea{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+}
+
+button{
+  background:#4CAF50;
+  color:white;
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  font-size:16px;
+  cursor:pointer;
+}
+
 footer{
   background:#333;
   color:white;
@@ -125,6 +147,7 @@ footer{
 
 <div class="section" id="contact">
 <h2>Contact Me</h2>
+
 <p><b>Email:</b> shibhangimane@gmail.com</p>
 <p><b>Phone:</b> 6301700017</p>
 
@@ -132,10 +155,37 @@ footer{
   <a href="tel:6301700017" class="call">Call Now</a>
   <a href="mailto:shibhangimane@gmail.com" class="email">Email Me</a>
 </div>
+</div>
 
-<p style="margin-top:15px;">
-Reach out today and take the first step toward a successful career.
-</p>
+<div class="section">
+<h2>Student Registration</h2>
+<p>If you are interested in mentorship, please fill this form. I will contact you personally.</p>
+
+<form action="https://formspree.io/f/xldqqbzd" method="POST">
+
+<label>Full Name</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Phone Number</label>
+<input type="text" name="phone" required>
+
+<label>Current Status</label>
+<select name="status">
+  <option>Student</option>
+  <option>Fresher</option>
+  <option>Graduate</option>
+</select>
+
+<label>How can I help you?</label>
+<textarea name="message" rows="4"></textarea>
+
+<br><br>
+<button type="submit">Register</button>
+
+</form>
 </div>
 
 </div>

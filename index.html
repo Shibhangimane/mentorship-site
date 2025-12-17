@@ -21,85 +21,28 @@ header {
 }
 header h1 { margin: 0; font-size: 2.8em; }
 header p { font-size: 1.3em; margin: 15px 0; }
-.container {
-  max-width: 1000px;
-  margin: -40px auto 40px;
-  padding: 20px;
-}
-.section {
-  background: white;
-  padding: 40px 30px;
-  border-radius: 14px;
-  margin-bottom: 30px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
+.container { max-width: 1000px; margin: -40px auto 40px; padding: 20px; }
+.section { background: white; padding: 40px 30px; border-radius: 14px; margin-bottom: 30px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: 0.3s; }
 .section:hover { box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.card {
-  flex: 1 1 250px;
-  background: #f9fff9;
-  padding: 25px 20px;
-  border-radius: 12px;
-  text-align: center;
-  min-height: 250px;
-  transition: 0.3s;
-}
+.cards { display: flex; flex-wrap: wrap; gap: 20px; }
+.card { flex: 1 1 250px; background: #f9fff9; padding: 25px 20px; border-radius: 12px; text-align: center; min-height: 250px; transition: 0.3s; }
 .card h3 { color: #4CAF50; margin-top: 0; }
 .card:hover { transform: translateY(-5px); }
 h2 { color: #4CAF50; margin-top: 0; }
-.btn {
-  display: inline-block;
-  background: white;
-  color: #4CAF50;
-  padding: 14px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  margin-top: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
+.btn { display: inline-block; background: white; color: #4CAF50; padding: 14px 30px; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
 .btn:hover { opacity: 0.9; transform: translateY(-2px); }
-.upi-btn {
-  background: #00c853; /* Google Pay green */
-  color: white;
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-.upi-btn img {
-  margin-right: 10px;
-}
+.upi-btn { background: #00c853; color: white; padding: 12px 25px; border-radius: 30px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; margin-top: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+.upi-btn img { margin-right: 10px; }
 .upi-btn:hover { transform: translateY(-3px); }
+input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 8px; border: 1px solid #ccc; }
+button { background: #4CAF50; color: white; padding: 12px 25px; border: none; border-radius: 25px; font-size: 16px; cursor: pointer; transition: 0.3s; }
+button:hover { opacity: 0.9; transform: translateY(-2px); }
 footer { background: #333; color: white; text-align: center; padding: 20px; }
 
 /* Testimonials carousel */
-.testimonial-carousel {
-  position: relative;
-  overflow: hidden;
-  height: auto;
-  text-align: center;
-}
-.testimonial-slide {
-  display: none;
-  padding: 20px;
-  font-style: italic;
-}
-.testimonial-slide.active {
-  display: block;
-}
+.testimonial-carousel { position: relative; overflow: hidden; height: auto; text-align: center; }
+.testimonial-slide { display: none; padding: 20px; font-style: italic; }
+.testimonial-slide.active { display: block; }
 </style>
 </head>
 <body>
@@ -111,10 +54,18 @@ footer { background: #333; color: white; text-align: center; padding: 20px; }
 
 <div class="container">
 
-<!-- Intro Video -->
+<!-- Motivational Video -->
 <div class="section">
-<h2>Why Freshers Need Mentorship</h2>
-<iframe width="100%" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Why Freshers Need Mentorship" frameborder="0" allowfullscreen style="border-radius:12px;"></iframe>
+<h2>Get Inspired & Stay Motivated</h2>
+<iframe width="100%" height="300"
+    src="https://www.youtube.com/embed/nuv1oOgzLKQ"
+    title="Motivational Music for Career & Confidence"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="border-radius:12px;">
+</iframe>
+<p style="margin-top:15px; font-size:1em; color:#555;">An encouraging message through music: You can do it, and your career starts today!</p>
 </div>
 
 <!-- Why Mentorship -->
@@ -156,7 +107,6 @@ footer { background: #333; color: white; text-align: center; padding: 20px; }
 <div class="section">
 <h2>Online Mentorship Program</h2>
 <div class="cards">
-
 <div class="card">
 <h3>7-Day Standard Program</h3>
 <p>Career guidance, resume tips, and interview preparation.</p>
@@ -178,8 +128,32 @@ footer { background: #333; color: white; text-align: center; padding: 20px; }
    Pay ₹2,499 via GPay
 </a>
 </div>
-
 </div>
+</div>
+
+<!-- Student Registration Form -->
+<div class="section">
+<h2>Student Registration</h2>
+<p>If you are interested in mentorship, please fill this form. I will contact you personally.</p>
+
+<form action="https://formspree.io/f/xldqqbzd" method="POST" onsubmit="window.location='thankyou.html';return true;">
+  <label>Full Name</label>
+  <input type="text" name="name" required>
+  <label>Email</label>
+  <input type="email" name="email" required>
+  <label>Phone Number</label>
+  <input type="text" name="phone" required>
+  <label>Current Status</label>
+  <select name="status">
+    <option>Student</option>
+    <option>Fresher</option>
+    <option>Graduate</option>
+  </select>
+  <label>How can I help you?</label>
+  <textarea name="message" rows="4"></textarea>
+  <br><br>
+  <button type="submit">Register</button>
+</form>
 </div>
 
 <!-- Testimonials -->
@@ -199,8 +173,6 @@ footer { background: #333; color: white; text-align: center; padding: 20px; }
 <p><b>Phone:</b> 6301700017</p>
 <a href="tel:6301700017" class="btn">Call Now</a>
 <a href="mailto:shibhangimane@gmail.com" class="btn">Email Me</a>
-</div>
-
 </div>
 
 <footer>
